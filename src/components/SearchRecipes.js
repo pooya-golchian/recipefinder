@@ -1,5 +1,9 @@
 
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {setRecipes} from './../actions';
+
+
 class SearchRecipes extends  Component {
 
     constructor () {
@@ -16,7 +20,9 @@ class SearchRecipes extends  Component {
         const url = `http://www.recipepuppy.com/api/?i=${ingredients}&q=${dish}`;
         //console.log('state',this.state, 'url', url);
 
-        fetch(url,{method:'GET',}).then (response => response.json()).then (json => console.log('recipes', json));
+        fetch(url,
+            {method:'GET',}).then (response => response.json())
+            .then (json => this.props.setRecipes(json.results));
 
 
     }
@@ -24,7 +30,7 @@ class SearchRecipes extends  Component {
     
  render () {
      return (
-    <div className="d-flex col-12 col-sm-12 justify-content-center align-items-center">
+    <div className="d-flex col-12 col-sm-12">
         <div className="form-inline">
             <div className="row form-group">
                 <div className="col-auto">
@@ -55,4 +61,4 @@ class SearchRecipes extends  Component {
 }
 
 
-export default SearchRecipes;
+export default connect(null, {setRecipes})(SearchRecipes);
