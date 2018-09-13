@@ -39,7 +39,7 @@ class SearchRecipes extends  Component {
                     id="ingredients" 
                     type="text" 
                     className="ingredients form-control" 
-                    placeholder="onions,garlic"></input>
+                    placeholder="onions, garlic"></input>
                 </div>
                 <div className="col-6 col-sm-12 col-md-5 pl-0">
                     <input                     

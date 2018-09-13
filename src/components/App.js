@@ -10,7 +10,7 @@ class App extends Component {
     return (
         <div className="recipe">
           <div className="recipe__container pb-5">
-        <h1 className="recipe__header d-flex col-12 col-sm-12  mb-2 pt-5 pb-2 p-0">Recipe Finder</h1>
+        <a className="recipe__header d-flex col-12 col-sm-12  mb-2 pt-5 pb-2 p-0" href="/"><h1 className="">Recipe Finder</h1></a>
         <SearchRecipes />
         <RecipeList />
         </div>

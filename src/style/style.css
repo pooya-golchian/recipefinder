@@ -6334,9 +6334,17 @@ body {
     background: white;
     min-height: 100vh; }
   .recipe__header {
+    color: #333;
     font-family: 'Kaushan Script', cursive;
-    font-size: 4em;
+    font-size: 2em;
     font-weight: bolder; }
+    .recipe__header:hover {
+      text-decoration: none; }
+    .recipe__header h1 {
+      color: #333;
+      font-family: 'Kaushan Script', cursive;
+      font-size: 2em;
+      font-weight: bolder; }
   .recipe__item a {
     padding: 1em;
     display: flex;

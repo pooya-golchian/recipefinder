@@ -17,23 +17,35 @@ body {
 .recipe {
     display: flex;
     flex: 1;
-    
+
     &__container {
         max-width: 800px;
         @include make-container();
         background: white;
         min-height: 100vh;
-        
-    }
-    &__header {
-        font-family: 'Kaushan Script', cursive;
-        font-size: 4em;
-        font-weight: bolder;
 
     }
-    
+
+    &__header {
+        color: #333;
+            font-family: 'Kaushan Script', cursive;
+            font-size: 2em;
+            font-weight: bolder;
+        &:hover {
+            text-decoration: none;
+        }
+
+        h1 {
+            color: #333;
+            font-family: 'Kaushan Script', cursive;
+            font-size: 2em;
+            font-weight: bolder;
+            
+            }
+        }
+
     &__item {
-       
+
         a {
             padding: 1em;
             display: flex;
@@ -41,21 +53,26 @@ body {
             border: 1px solid #dddddd;
             border-radius: .5em;
             background: #fbfbfb;
+
             &:hover {
                 text-decoration: none;
             }
         }
+
         &--link {}
+
         &--img {
             border-radius: .5em;
-        
+
         }
-        &--title{
+
+        &--title {
             font-family: 'Anton', sans-serif;
-            color:black;
+            color: black;
             font-size: 1.7em
         }
-        &--ingredient{
+
+        &--ingredient {
             font-family: 'PT Sans', sans-serif;
             font-size: .9em;
             color: #999999;
@@ -63,9 +80,3 @@ body {
         }
     }
 }
-
-
-
-
-
-
