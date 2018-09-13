@@ -8,7 +8,7 @@ class RecipeList extends Component {
   render() {
     // console.log('this.props', this.props);
     return (
-      <div className='recipe mt-3'>
+      <div className='mt-3'>
          {
              this.props.recipes.map((recipe, index) => {
                  return(

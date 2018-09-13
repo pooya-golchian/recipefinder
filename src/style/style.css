@@ -6316,20 +6316,34 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'PT Sans', sans-serif; }
 
 body {
-  background: #ffffff; }
+  background: #f1f1f1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
 
-.recipe__header {
-  font-family: 'Kaushan Script', cursive;
-  font-size: 4em;
-  font-weight: bolder; }
-
-.recipe__item {
-  border: 1px solid #333;
-  border-radius: .5em; }
+.recipe {
+  display: flex;
+  flex: 1; }
+  .recipe__container {
+    max-width: 800px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background: white;
+    min-height: 100vh; }
+  .recipe__header {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4em;
+    font-weight: bolder; }
   .recipe__item a {
     padding: 1em;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    border: 1px solid #dddddd;
+    border-radius: .5em;
+    background: #fbfbfb; }
     .recipe__item a:hover {
       text-decoration: none; }
   .recipe__item--img {

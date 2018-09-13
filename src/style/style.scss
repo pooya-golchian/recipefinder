@@ -6,13 +6,25 @@
 
 
 body {
-
-    background: #ffffff;
+    background: #f1f1f1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
 
 .recipe {
+    display: flex;
+    flex: 1;
+    
+    &__container {
+        max-width: 800px;
+        @include make-container();
+        background: white;
+        min-height: 100vh;
+        
+    }
     &__header {
         font-family: 'Kaushan Script', cursive;
         font-size: 4em;
@@ -21,12 +33,14 @@ body {
     }
     
     &__item {
-        border: 1px solid #333;
-        border-radius: .5em;
+       
         a {
             padding: 1em;
             display: flex;
             flex-direction: row;
+            border: 1px solid #dddddd;
+            border-radius: .5em;
+            background: #fbfbfb;
             &:hover {
                 text-decoration: none;
             }

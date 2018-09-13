@@ -8,7 +8,7 @@ class RecipeItem extends Component {
     let {recipe} = this.props;
     return (
       <div className='recipe__item mb-3'>
-       <a className='recipe__item--link' className='d-flex col-12 mb-2' href={recipe.href}>
+       <a className='recipe__item--link' className='d-flex col-12' href={recipe.href}>
        <img className='recipe__item--img' src={recipe.thumbnail !== '' ? recipe.thumbnail : 'http://img.recipepuppy.com/9.jpg' } alt={recipe.title} />
             <div>
             <div className='recipe__item--title  d-flex col-12'>{recipe.title}</div>
