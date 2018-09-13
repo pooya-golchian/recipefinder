@@ -1,10 +1,53 @@
 @import './node_modules/bootstrap/scss/bootstrap.scss';
 
-body {
-
-    background: #f1f1f1;
+* {
+    font-family: 'PT Sans', sans-serif;
 }
 
+
+body {
+
+    background: #ffffff;
+}
+
+
+
+.recipe {
+    &__header {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 3em;
+
+    }
+    
+    &__item {
+        border: 1px solid #333;
+        border-radius: .5em;
+        a {
+            padding: 1em;
+            display: flex;
+            flex-direction: row;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &--link {}
+        &--img {
+            border-radius: .5em;
+        
+        }
+        &--title{
+            font-family: 'Anton', sans-serif;
+            color:black;
+            font-size: 1.7em
+        }
+        &--ingredient{
+            font-family: 'PT Sans', sans-serif;
+            font-size: .9em;
+            color: #999999;
+
+        }
+    }
+}
 
 
 

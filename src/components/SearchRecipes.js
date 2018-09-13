@@ -31,7 +31,7 @@ class SearchRecipes extends  Component {
  render () {
      return (
     <div className="d-flex col-12 col-sm-12">
-        <div className="form-inline">
+        <div className="form-inline col-12">
             <div className="row form-group">
                 <div className="col-auto">
                     <input 
