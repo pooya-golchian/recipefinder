@@ -7,11 +7,9 @@ import { bake_cookie, read_cookie } from 'sfcookies';
 
 function recipes(state = [], action) {
     recipes = read_cookie('recipes');
-
     switch (action.type) {
         case SET_RECIPES:
         bake_cookie('recipes', recipes);
-
             return action.items;
         default:
             return state;
@@ -35,6 +33,12 @@ function favoriteRecipes(state = [], action) {
 
     }
 }
+
+
+
+
+
+
 
 const rootReducer = combineReducers({recipes, favoriteRecipes});
 export default rootReducer;

@@ -18,6 +18,17 @@ favorite(recipe) {
   this.setState({favorited : true});
 }
 
+unfavorite(recipe) {
+  this.props.favoriteRecipe(recipe);
+  this.setState({favorited : false});
+
+
+}
+
+
+
+
+
 
   render() {
     let {recipe} = this.props;
@@ -32,10 +43,13 @@ favorite(recipe) {
             </a>
             {
               this.props.favoriteButton ?
-                this.state.favorited  ?
+              this.state.favorited  ?
                 <div></div>
                 :
-                <div className="col-auto recipe__item--star-fill" onClick={()=> this.favorite(recipe) } > &#9829; </div>
+                <div className="col-auto recipe__item--star-fill" 
+              
+                onClick={ this.props.favoriteButton ?  ()=> this.favorite(recipe) : this.unfavorite(recipe) } > &#9829; </div>
+
                 :
                 <div></div>
 
