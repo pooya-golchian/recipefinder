@@ -34,11 +34,5 @@ function favoriteRecipes(state = [], action) {
     }
 }
 
-
-
-
-
-
-
 const rootReducer = combineReducers({recipes, favoriteRecipes});
 export default rootReducer;
