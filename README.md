@@ -5,4 +5,4 @@
 * Let's GO!
 * Live Demo => [LIVE DEMO][1]
 
-[1]: http://pooyagolchian.ir/recipefinder/
+[1]: http://pooyagolchian.ir/recipesfinder
