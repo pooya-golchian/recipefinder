@@ -32,12 +32,13 @@ favorite(recipe) {
             </a>
             {
               this.props.favoriteButton ?
-                this.state.favorited ?
-                <div className="col-auto recipe__item--star" onClick={()=> this.favorite(recipe) } > &#9829;	 </div>
+                this.state.favorited  ?
+                <div></div>
                 :
                 <div className="col-auto recipe__item--star-fill" onClick={()=> this.favorite(recipe) } > &#9829; </div>
                 :
                 <div></div>
+
             }
         </div>
         

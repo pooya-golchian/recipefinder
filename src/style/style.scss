@@ -15,8 +15,7 @@ body {
 
 
 .recipe {
-    display: flex;
-    flex: 1;
+ 
 
     &__container {
         max-width: 800px;
@@ -111,4 +110,31 @@ body {
             color:#dddddd;
         }
     }
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #dddddd;
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        li {
+            display: flex;
+            list-style: none;
+            font-weight: bold;
+            font-size: 1.3em;
+            a {
+                color: #666666;
+                &:hover {
+                    color:black;
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+    
 }
