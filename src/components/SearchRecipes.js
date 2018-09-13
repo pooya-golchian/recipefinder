@@ -18,7 +18,7 @@ class SearchRecipes extends  Component {
     search () {
         let {ingredients , dish} = this.state;
         const url = `http://www.recipepuppy.com/api/?i=${ingredients}&q=${dish}`;
-        //console.log('state',this.state, 'url', url);
+        console.log('state',this.state, 'url', url);
 
         fetch(url,
             {method:'GET',}).then (response => response.json())
@@ -49,7 +49,7 @@ class SearchRecipes extends  Component {
                 <button 
                     onClick = {() => this.search()}
                     className="btn btn-outline-primary"
-                    >Search Recipes</button>
+                    >Find</button>
                 
             </div>
         </div>

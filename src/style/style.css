@@ -6320,7 +6320,8 @@ body {
 
 .recipe__header {
   font-family: 'Kaushan Script', cursive;
-  font-size: 3em; }
+  font-size: 4em;
+  font-weight: bolder; }
 
 .recipe__item {
   border: 1px solid #333;
