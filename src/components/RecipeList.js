@@ -12,7 +12,12 @@ class RecipeList extends Component {
          {
              this.props.recipes.map((recipe, index) => {
                  return(
-                     <RecipeItem className='d-flex flex-row' key={index} recipe={recipe} />
+                     <RecipeItem 
+                     className='d-flex flex-row'
+                      key={index} 
+                      recipe={recipe}
+                      favoriteButton={true}
+                      />
                  )
              })
          }

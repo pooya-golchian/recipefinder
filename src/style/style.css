@@ -6345,22 +6345,44 @@ body {
       font-family: 'Kaushan Script', cursive;
       font-size: 2em;
       font-weight: bolder; }
-  .recipe__item a {
+  .recipe__item {
     padding: 1em;
     display: flex;
     flex-direction: row;
     border: 1px solid #dddddd;
     border-radius: .5em;
     background: #fbfbfb; }
-    .recipe__item a:hover {
+    .recipe__item:hover {
       text-decoration: none; }
-  .recipe__item--img {
-    border-radius: .5em; }
-  .recipe__item--title {
-    font-family: 'Anton', sans-serif;
-    color: black;
-    font-size: 1.7em; }
-  .recipe__item--ingredient {
-    font-family: 'PT Sans', sans-serif;
-    font-size: .9em;
-    color: #999999; }
+    .recipe__item--img {
+      border-radius: .5em; }
+    .recipe__item__link:hover {
+      text-decoration: none; }
+    .recipe__item__link--title {
+      font-family: 'Anton', sans-serif;
+      color: black;
+      font-size: 1.7em; }
+      .recipe__item__link--title:hover {
+        text-decoration: none; }
+    .recipe__item__link--ingredient {
+      font-family: 'PT Sans', sans-serif;
+      font-size: .9em;
+      color: #999999; }
+      .recipe__item__link--ingredient:hover {
+        text-decoration: none; }
+    .recipe__item--star {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 1.5em;
+      cursor: pointer;
+      color: #c12d2d; }
+    .recipe__item--star-fill {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 1.5em;
+      cursor: pointer;
+      color: #dddddd; }

@@ -1,7 +1,7 @@
 
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {setRecipes} from './../actions';
+import {setRecipes} from '../actions';
 
 
 class SearchRecipes extends  Component {
