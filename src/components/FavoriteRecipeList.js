@@ -16,7 +16,7 @@ class FavoriteRecipeList extends Component {
               <li className='col-auto'><Link to='/'>Home</Link></li>
               {
           this.props.favoriteRecipes.length > 0 ?
-          <li className='col-auto'><Link to='favorites'>Favorites</Link></li> :
+          <li className='col-auto'><Link to='/favorites'>Favorites</Link></li> :
           <li></li>
       }
             </ul>
